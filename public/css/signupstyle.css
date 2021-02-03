@@ -1,0 +1,96 @@
+html{
+    height: 100%;
+    width: 100%;
+    
+    background: linear-gradient(45deg,#dd5acc,#6ad9eb,#dd5acc) no-repeat;
+}
+
+button, #button2 {
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: darkcyan;
+    }
+.main{
+    grid-area: main;
+        box-shadow: 0px 0px 5px black;
+        margin-left: 20%;
+        margin-right: 20%;
+        border: 3px solid rgb(225, 0, 255);
+        
+        text-align: center;
+        padding-bottom: 10px;
+        padding-top: 25px;
+        box-sizing: border-box;
+        box-sizing: inherit;
+        border-radius: 10px;
+        background-color: rgba(243, 47, 47, 0.301);
+    }
+    header{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color:  rgba(250, 250, 250, 0.931);
+        background-color: rgba(41, 235, 83, 0.7);
+        border-radius: 2px;
+        border : 3px;
+        padding: 1%;
+        font-size: 40px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    label{
+        font-size: 20px;
+        display: inline-block;
+        width: 150px;
+    }
+
+    #yeartable{
+        border-spacing: 1em 1em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #yeartable tr td input {
+        color:rgb(59, 150, 59);
+        border: none;
+        font-size: 30px;
+        border-radius: 5px;
+    }
+    #yeartable tr td div label {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+        border-radius: 400px;
+        padding: 5px;
+        background-color: white;
+        font-size: 20px;
+        margin: 2px;
+    }
+    #yeartable tr td label {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-radius: 40px;
+        padding: 5px;
+        background-color: rgba(41, 235, 83, 0.7);
+        font-size: 20px;
+    }
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "main main";
+    height: 100%;
+    width: 100%;
+}
+
+#year label:hover{
+ background-color: rgb(109, 230, 169);
+}
+
+
+
+
+

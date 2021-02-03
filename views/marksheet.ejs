@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="\public\css\marksheet.css">
+</head>
+<body>
+    <div>
+        <table class="main">
+            <% if(userData.length!=0){%>
+                <!-- <%var i=1;%> -->
+                <%userData.forEach(function(data){%>
+                    <tr>
+                        <td colspan="2"><div class="heading">RESULTS</div></td>
+                    </tr>
+                
+                <tr>
+                    <td colspan="2"><%=data.email;%></td>
+                </tr>
+                <tr>
+                    <td>MATHS : </td>
+                    <td><%=data.maths %></td>
+                </tr>
+                <tr>
+                    <td>SCIENCE : </td>
+                    <td><%=data.science %></td>
+                </tr>  
+                <tr>
+                    <td>TAMIL : </td>
+                    <td><%=data.tamil %></td>
+                </tr>    
+                 <tr>
+                    <td>ENGLISH : </td>
+                    <td><%=data.english %></td>
+                 </tr>   
+                    
+                <% i++ })%>
+                <% } else { %>
+                <tr>
+                    <td colspan="2"><div class="notfound">MARKS NOT FOUND</div></td>
+                </tr>
+                <%}%>
+        </table>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="\public\css\loginstyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="left">
+            <!-- <h1 id="prompt">CLICK HERE FOR FUN</h1> -->
+            <ul class="bg-bubbles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            
+        </div>
+        <div class="right">
+            <div class="menu">
+                <h1>SIET-LOGIN</h1>
+                <% if(typeof errormessage != 'undefined'){%>
+                <div class="error">
+                <small> <%=errormessage%></small>
+                </div>
+                <%}%>
+                <form class="form" id="loginm" method="POST" action="/login">
+                    <input type="email" placeholder="Email" id="email" name="email" required>
+                    <input type="password" placeholder="Password" id="password" name="password" required>
+                    <i class="fa fa-eye" id="togglepassword" style="font-size: 25px;"></i>
+                </form>
+                <span class="forgotpassword"><a href="">forgot Password?</a></span>
+                <button class="login" type="submit" form="loginm" onclick="return clientvalidate()" >Login</button>
+                <form action="/signuppage" method="POST">
+                    <input type="submit" class="signup" value="Sign Up Here!!" name="signup" id="signuper">
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    <script src="\public\js\login.js"></script>
+</body>
+</html>
